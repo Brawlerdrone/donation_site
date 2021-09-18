@@ -63,6 +63,37 @@
     
     </div>
   </section>
+
+  <!--ABOUT-->
+  <section class="about-section mt-5" id="about">
+    <div class="container">
+        <div class="text-center " >
+            <h2 class="section-heading text-uppercase font-weight-bold">About</h2>
+            <h3 class="section-subheading text-muted">
+              We make a living by what we get, but we make a life by what we give.</h3>
+        </div>
+        <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container-fluid">
+  
+          <div class="row">
+            <div class="col-xl-5 col-lg-6 d-flex justify-content-center align-items-stretch" >
+               <img src="Images/img3.jpg" class="img-fluid" >
+            </div>
+  
+            <div class="col-xl-7 col-lg-6 d-flex flex-column align-items-stretch justify-content-center py-3 px-lg-5" >
+              <h4 class="initial">Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
+               <p><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, quod esse illo veniam inventore repudiandae sunt sed aut qui laborum.
+                 Labore iusto a est adipisci? Perferendis eveniet laborum quae eius.
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, distinctio. Maiores, quaerat! Aliquid error fuga eos voluptates, in natus earum distinctio atque magnam, 
+                 optio consectetur velit esse sit voluptatum nulla?
+  
+            
+                </p>
+            </div>
+          </div>
+        </div>
+      </section>
   
    
 @endsection
