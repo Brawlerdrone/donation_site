@@ -12,4 +12,16 @@ class pagesController extends Controller
 
         return view ('pages.home');
     }
+    public function mission_page(){
+        return view ('pages.mission');
+    }
+    public function projects(){
+        return view ('pages.projects');
+    }
+    public function donate(){
+        return view ('pages.donate');
+    }
+    public function volunteer(){
+        return view ('pages.volunteer');
+    }
 }
