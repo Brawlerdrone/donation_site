@@ -9,7 +9,12 @@
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
     --header-height: 3rem;
     --hover-colour : blue;
+    --heading-size: 2rem;
+    --slightly-smaller-headings: 1.75rem;
+    --small-text-size:0.75rem;
 }
+/* ============= GLOBALS =============== */
+
 /* ============= GLOBALS =============== */
 
 html{
@@ -22,7 +27,7 @@ html{
 
 body
 {
-    background: #ccc;
+    background:var(--light);
     margin: 30px 50px;
     line-height: 1.4;
 }
@@ -44,8 +49,6 @@ body
 }
 img{
     max-width: 100%;
-    
-    
 }
 
 .wrapper{
@@ -59,7 +62,7 @@ img{
 /* =============END OF GLOBALS =============== */
 .card{
     background: var(--light);
-    padding: 1rem 1rem;
+    padding: 1.3rem 1.2rem;
     box-sizing: border-box;
     box-shadow: var(--shadow);
 
@@ -76,7 +79,7 @@ img{
     gap: 10px;
     padding: 0;
     list-style: none;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(7,1fr);
 
 }
 .main-nav a
@@ -132,15 +135,18 @@ img{
     gap :20px;
     grid-template-areas: 'background__details background__details__image';
 }
+
 .background__details
 {
+    grid-area: background__details;
     background-color: var(--light);
     padding: 15px;
-    box-shadow: var(--shadow);
+    
 }
 .background__details__image
 {
-    box-shadow: var(--shadow);
+    grid-area: background__details__image;
+    
     
 }
 .background__details a
@@ -150,29 +156,27 @@ img{
 /* End of background story */
 
 /* Stat section */
-.personell__section
+.stat__section{
+
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    
+
+}
+.stat__section div p
 {
-    background: var(--light);
     text-align: center;
-    padding: 1rem 1rem;
-    box-shadow: var(--shadow);
+}
+.children{
+    align-self: center;
 }
 .care{
     background: var(--light);
     padding: 1rem 1rem;
-    box-shadow: var(--shadow);
-}
-.stat__section{
-    display: grid;
-    gap: 20px;
-    grid-template-areas: 'care chilren volunteers'
-    'care years_of_experiencnce children_intergrated';
     
-    /* A problem occurred here but i will fix it
-     */
-   
-
 }
+
 .number{
     font-size:3.5rem ;
     font-weight: 700;
@@ -190,74 +194,108 @@ img{
     grid-template-areas: 'vision purpose core values';
     
 }
+/* ============= END OF MISSION PAGE =============== */
+/* ============= PROJECTS PAGE =============== */
+   
+.bottom_section{
+    display: grid;
+    gap: 15px;
+    grid-template-areas: 'bottom_section_a bottom_section_b';
+}
+.bottom_section_a{
+    grid-area: bottom_section_a;
+}
+.bottom_section_b{
+    grid-area: bottom_section_b;
+}
+/* ============= END OF PROJECTS PAGE =============== */
 
-/* Responsive breakpoints */
-@media (max-width : 700px) {
-    .main-nav ul
+/* ============= VOLUNTEER PAGE =============== */
+#map
+{
+    width: 100%;
+    min-height: 400px;
+}
+/* RESPONSIVE BREAKPOINTS */
+@media screen and (max-width : 768px) {
+
+    .wrapper
     {
+        display: grid;
+        gap: 20px;
+    }
+    .main-nav ul {
         grid-template-columns: 1fr;
     }
-    /* Background story */
+    /* home page */
+    .showcase h1 
+    {
+        font-size: var(--heading-size)!important;
+    }
+    .background{
+        grid-template-areas: 'background__details'
+        'background__details__image';
+    }
+   /* mission page */
+
+   .v_p_c
+   {
+       grid-template-areas: 
+       'vision'
+       'purpose'
+       'core_values';
+   }
+    /* Projects page */
+    .bottom_section
+    {
+        display: grid;
+        grid-template-areas: 'bottom_section_a'
+        'bottom_section_b';
+    }
+    
+}
+
+@media screen and (max-width : 480px) {
+    
+    .wrapper
+    {
+        display: grid;
+        gap: 15px;
+    }
+    .main-nav ul {
+        grid-template-columns: 1fr;
+    }
+    /* ========= HOME PAGE =========== */
+
+    /* top container */
+    .showcase h1 
+    {
+        font-size: var(--heading-size)!important;
+    }
+
+    /* background  */
+
     .background
     {
-        
+        display: grid;
         grid-template-areas: 
         'background__details'
         'background__details__image';
     }
-    .background__details{
-        display: grid;
-        gap : 8px;
-    }
-    .background__details h2{
 
-    }
-    .background__details p {
-        font-size: 0.8rem;
-    }
-    /* End of background story */
-
-    /* Stat section */
-    .stat__section{
-        grid-template-areas: 
-        'care'
-        'Volunteers'
-        'years_of_experiencnce'
-        'children_intergrated';
-    }
-
-    /* ============= MISSION PAGE ===============*/
-
-    /* V p c */
-    .v_p_c{
-        grid-template-areas: 
-        'vision'
-        'purpose'
-        'core_values';
-    }
-    .core_values{
-        /* display: grid; */
-        gap : 2px;
-    }
-
-    /* ============= END OF MISSION PAGE ===============*/
-
-    /* ============= PROJECTS PAGE ===============*/
-
-    .projects
+    .background__details
     {
-        display: grid;
-        gap: 20px;
-        grid-template-areas: 
-        'top_section bottom_section_b'
-        'bottom_section_a ';
+        grid-area: background__details;
+    } 
+    .background__details__image
+    {
+        grid-area: background__details__image;
+    } 
+    
+    .stat__section
+    {
+       grid-template-columns: 1fr;
     }
 
-     /* ============= END OF PROJECTS PAGE ===============*/
-}
-@media (max-width : 500px) {
-    .main-nav ul
-    {
-        grid-template-columns: 1fr;
-    }
+
 }

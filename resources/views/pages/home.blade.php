@@ -7,7 +7,7 @@
     <div class="showcase">
         <h1>HELPING THE ORPHANS AND THE VULNERABLE</h1>
         <a href="" class="imgbtn">know more 
-        <i class="fas fa-arrow-right"></i></a>
+        </a>
 
     </div>
     
@@ -27,30 +27,34 @@
     </div>
 </section>
 
-<section class="stat__section">
+<section class="care__section">
     <div class = "care">
         <h2>We always care for our children</h2>
         <p>Wings of a Dove Centre has facilitated the rehabilitation of vulnerable street children, neglected and abused children, by building a community around them and encouraging close links among the vulnerable children and also, between the outside stakeholder communities. We embrace participatory approach in carrying out our activities as envisioned in the organizational purpose to carry out multifaceted project activities in terms 
             of child rehabilitation and community development</p>
     </div>
-    <div class="personell__section children">
+    
+</section>
+
+<section class="stat__section">
+    <div class="children ">
         <p class="number">61</p>
         <p>children in our care</p>
     </div>
-    <div class="personell__section Volunteers">
+    <div class="Volunteers">
         <p class="number">15</p>
         <p>Volunteers</p>
-
     </div>
-    <div class="personell__section years_of_experiencnce">
+    <div class="years_of_experience">
         <p class="number">10</p>
         <p>years of experience</p>
     </div>
-    <div class="personell__section children_intergrated">
+    <div class="children_intergrated">
         <p class="number">48</p>
         <p>children reintergrated</p>
     </div>
 </section>
+
 
 
 

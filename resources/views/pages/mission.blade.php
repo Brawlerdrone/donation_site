@@ -27,7 +27,7 @@
 </section>
 
 <section class="v_p_c">
-    <div class="vision card">
+    <div class="vision">
         <h1>Vision</h1>
         <p>Our vision is to have a society where vulnerable 
             children are enjoying their basic 
@@ -35,13 +35,13 @@
         </p>
         <img src="{{URL::asset('images/image9.jpg')}}" alt="">
     </div>
-    <div class="purpose card">
+    <div class="purpose">
         <h1>Purpose</h1>
         <p>Wings of a Dove Community Centre exists to provide a holistic development to the orphaned and vulnerable children (OVC) and reintegrating them back to the community after 
             they have successfully gone through the rehabilitation process.
         </p>
     </div>
-    <div class="core_values card">
+    <div class="core_values">
         <h1>Core Values</h1>
         <p>We have organizational CORE VALUES that guide our every action and moderates our engagement with stakeholders and community. The core values are as follows;
             <p>i.) Commitment: We value our services to the needy children, and pledge our support to the like-minded partners. </p>

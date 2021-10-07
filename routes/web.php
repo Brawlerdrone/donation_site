@@ -16,3 +16,5 @@ Route::get('mission', 'pagesController@mission_page');
 Route::get('projects','pagesController@projects');
 Route::get('donate','pagesController@donate');
 Route::get('volunteer','pagesController@volunteer');
+Route::get('gallery','pagesController@gallery');
+Route::get('contact','pagesController@contact');

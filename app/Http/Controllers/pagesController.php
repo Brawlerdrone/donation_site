@@ -24,4 +24,10 @@ class pagesController extends Controller
     public function volunteer(){
         return view ('pages.volunteer');
     }
+    public function gallery(){
+        return view ('pages.gallery');
+    }
+    public function contact(){
+        return view('pages.contact');
+    }
 }

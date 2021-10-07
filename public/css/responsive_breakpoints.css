@@ -1,0 +1,121 @@
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --header-height: 3rem;
+    --hover-colour : blue;
+    --heading-size: 2rem;
+    --slightly-smaller-headings: 1.75rem;
+    --text-size:0.75rem;
+}
+/* ============= GLOBALS =============== */
+
+
+
+
+
+/* ============ RESPONSIVE BREAKPOINTS =============== */
+
+/* ** TABLETS ** */
+
+@media screen and (max-width : 768px) {
+    .btn{
+        background: var(--dark);
+        color: var(--light);
+        padding: 0.6rem 1.3rem;
+        text-decoration: none;
+        border: 0;
+        
+    }
+    .imgbtn{
+    
+        color: var(--light);
+        padding: 0.6rem 1.3rem;
+        text-decoration: none;
+        border: 2px solid;
+    }
+    img{
+        max-width: 100%;
+        
+        
+    }
+    html{
+        scroll-behavior: smooth;
+        box-sizing: border-box;  /*read more on this */
+        font-family: 'Poppins',Arial, Helvetica, sans-serif;
+        color: var(--dark);
+    
+    }
+   
+    body
+    {
+        background:var(--light);
+        margin: 40px 60px;
+        line-height: 1.4;
+    }
+    .wrapper
+    {
+        display: grid;
+        gap: 15px;
+    }
+
+    /* ========= HOME PAGE =========== */
+
+    /* top container */
+    .showcase h1 
+    {
+        font-size: var(--heading-size)!important;
+    }
+
+    /* background  */
+
+    .background
+    {
+        display: grid;
+        grid-template-areas: 
+        'background__details'
+        'background__details__image';
+    }
+
+    .background__details
+    {
+        grid-area: background__details;
+    } 
+    .background__details__image
+    {
+        grid-area: background__details__image;
+    }   
+}
+
+@media screen and (max-width : 700px) 
+{
+    body
+    {
+        background:var(--light);
+        margin: 60px 80px;
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width : 480px) 
+{
+    img{
+       max-width: 100%;
+       max-height: 100%;
+    }
+    body
+    {
+        background-color: var(--dark);
+    }
+    .wrapper
+    {
+        display: grid;
+        gap: 10px;
+    }
+
+}
+
+   
+
+    

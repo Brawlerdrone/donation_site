@@ -11,7 +11,7 @@
 </section>   
 
 <section class="projects ">
-    <div class="top_section card">
+    <div class="top_section">
         <h1>Projects</h1>
         <p>The Wings of a dove Community Centre (WDCC) was established in 2001 AS community day care in Dandora. 
             The day care served the vulnerable inhabitants of Dandora Gitaramarigo slums who were working in the dumpsite.
@@ -21,7 +21,11 @@
             
             The wings of a dove Community Centre is a shining light, a haven to the vulnerable children drawn from  Ruai, Dandora, Kayole, Mukuru  korogocho  and Soweto slums The wings of a dove Community Centre is situated in  Njiru sub county of Nairobi, in Ruai</p>
     </div>
-    <div class="bottom_section_a card">
+   
+</section>
+
+<section class="bottom_section">
+    <div class="bottom_section_a ">
         <p>The main projects at the children’s home are;</p>
 
             <p>Adult education literacy improvements</p> 
@@ -37,10 +41,9 @@
 
 
     </div>
-    <div class="bottom_section_b card">
+    <div class="bottom_section_b">
         <img src="{{URL::asset('images/image11.jpg')}}" alt="">
-    </div>
-
+</div>
 </section>
 
 
